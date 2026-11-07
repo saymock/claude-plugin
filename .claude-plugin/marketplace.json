@@ -1,0 +1,17 @@
+{
+  "name": "saymock",
+  "owner": {
+    "name": "saymock",
+    "url": "https://saymock.com"
+  },
+  "metadata": {
+    "description": "saymock plugins for Claude Code."
+  },
+  "plugins": [
+    {
+      "name": "saymock",
+      "source": "./",
+      "description": "Design with Claude in saymock: the MCP server plus skills to design from a codebase, implement a design in code, and review screens."
+    }
+  ]
+}

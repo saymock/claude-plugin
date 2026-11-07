@@ -1,0 +1,14 @@
+{
+  "name": "saymock",
+  "version": "0.1.0",
+  "description": "Design with Claude in saymock, the collaborative design board: connects the saymock MCP server and adds skills to design screens from a codebase, implement a saymock design in code, and review a screen.",
+  "author": {
+    "name": "saymock",
+    "url": "https://saymock.com"
+  },
+  "homepage": "https://saymock.com",
+  "repository": "https://github.com/saymock/claude-plugin",
+  "privacyPolicyUrl": "https://saymock.com/confidentialite/",
+  "license": "MIT",
+  "keywords": ["design", "ui", "mockup", "tailwind", "figma-alternative", "mcp"]
+}
