@@ -1,6 +1,6 @@
 {
   "name": "saymock",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Design with Claude in saymock, the collaborative design board: connects the saymock MCP server and adds skills to design screens from a codebase, implement a saymock design in code, and review a screen.",
   "author": {
     "name": "saymock",

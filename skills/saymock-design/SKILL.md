@@ -36,8 +36,12 @@ working method. Humans may be watching the board live: work screen by screen, no
 ## Iterating with the team
 
 People comment on elements and address requests to you: the `inbox` prompt (or `list_tasks`)
-gives them with the element they point at. Big explorations go into a branch (`create_branch`)
-the user can review and merge; `save_version` before a large change.
+gives them with the element they point at. Asked for alternatives ("propose 3 reworks", "a few
+ideas", "des pistes"), call `propose`: one copy of the screen(s) per direction, kept on the screen
+where people preview them in place and choose; edit each copy by its frameId, `describe_changes`
+on each, never new frames on the board and never branches for this. A request to carry a chosen
+option over to other screens comes with the exact `propose … report` call. One big change the
+user reviews and merges goes into a branch (`create_branch`); `save_version` before a large change.
 
 ## Handing off
 
