@@ -32,13 +32,13 @@ saymock account (free trial at [app.saymock.com](https://app.saymock.com)).
 If you added the server by hand before (`claude mcp add … saymock …`), remove it
 (`claude mcp remove saymock`): otherwise the tools show up twice.
 
-Self-hosted server or local development: set `SAYMOCK_MCP_URL` before starting Claude Code, e.g.
-`SAYMOCK_MCP_URL=http://localhost:4040/mcp claude`.
+Self-hosted server or local development: the plugin connects to `https://app.saymock.com/mcp`;
+add your own server by hand instead (`claude mcp add --transport http saymock http://localhost:4040/mcp`).
 
 ## Privacy
 
 The plugin only connects Claude Code to your saymock account; what the agent reads and writes
-stays in the workspace you authorize. See the [privacy policy](https://saymock.com/confidentialite/).
+stays in the workspace you authorize. See the [privacy policy](https://saymock.com/en/privacy/).
 
 ## License
 

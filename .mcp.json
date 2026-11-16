@@ -2,7 +2,7 @@
   "mcpServers": {
     "saymock": {
       "type": "http",
-      "url": "${SAYMOCK_MCP_URL:-https://app.saymock.com/mcp}"
+      "url": "https://app.saymock.com/mcp"
     }
   }
 }

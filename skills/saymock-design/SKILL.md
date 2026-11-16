@@ -1,6 +1,6 @@
 ---
 name: saymock-design
-description: Design new screens or flows in saymock that are good and easy to edit — structure, components, templates, naming and the verify loop. Use when the user asks to design, mock up, sketch, wireframe or prototype screens, an app, a page or a flow in saymock (not to reproduce an existing screen from code: design-from-code).
+description: "Design new screens or flows in saymock that are good and easy to edit — structure, components, templates, naming and the verify loop. Use when the user asks to design, mock up, sketch, wireframe or prototype screens, an app, a page or a flow in saymock (not to reproduce an existing screen from code: design-from-code)."
 ---
 
 # Designing in saymock
@@ -30,8 +30,23 @@ working method. Humans may be watching the board live: work screen by screen, no
 
 - Place screens side by side in flow order; the states that matter (empty, error, loading,
   selected) as extra frames next to their screen.
-- Prototype links with `data-goto` between screens when the user wants to click through.
-- One `add_note` per flow explaining the choices and open questions.
+- Prototype links with `data-goto` between screens when the user wants to click through: a
+  sheet, dialog or drawer as an overlay (`data-overlay="bottom"`, a frame only as big as the
+  panel), `data-transition="smart"` between two states of a screen whose elements share their
+  `data-name`, `data-trigger="delay"` for a splash or a loader, swipes for carousels.
+- Make it alive where it explains the design, at the cost of a few classes (the server's "Live
+  interactions"): a list that really scrolls (enough template rows, `overflow-y-auto`), a
+  selector or tabs as radios with `peer-checked:`, an accordion as `<details>`, press and hover
+  effects on buttons. Tell the user to try it in the player or with the board's Interact tool (P).
+  A state of the screen CSS cannot show (a like, a menu that opens): `data-toggle` and
+  `data-on:` classes; data that changes gets its own frame and a `data-goto`.
+- One `add_note` per flow explaining the choices and open questions, with `nearId` (the screen
+  it is about) so it sits beside that screen; also notes for what a screen cannot show to whoever
+  builds it (gestures, rules, edge cases): `get_specs` hands them to the implementer.
+- Nothing on the board covers anything else: leave x/y out unless you lay out a grid yourself
+  (a covering spot is moved anyway), and fix a `board-overlap` from `check_layout` (a long page
+  that grew over a note) with the `update_nodes` it gives. Once a flow is laid out, or when the
+  board is messy, `arrange_board` tidies it (rows aligned, even spacing, notes beside their screen).
 
 ## Iterating with the team
 
@@ -45,5 +60,5 @@ user reviews and merges goes into a branch (`create_branch`); `save_version` bef
 
 ## Handing off
 
-When the design is approved, the `implement-design` skill (with `export_code`) turns it into code
-in the project.
+When the design is approved, the `implement-design` skill turns it into code in the project:
+`export_code` for the web, `get_specs` for native apps (iOS, Android, Flutter…) or any stack.
