@@ -1,6 +1,8 @@
 # saymock for Claude Code
 
-[saymock](https://saymock.com) is a collaborative design board your own agent can draw on: screens
+[![Saymock MCP connector](https://glama.ai/mcp/connectors/com.saymock/saymock/badges/score.svg)](https://glama.ai/mcp/connectors/com.saymock/saymock)
+
+[saymock](https://saymock.com/en/?utm_source=claude-plugin-readme&utm_medium=github) is a collaborative design board your own agent can draw on: screens
 are HTML + Tailwind, your team comments and reviews them live, and Claude turns them into code.
 
 This plugin connects Claude Code to saymock and adds skills for the common jobs:

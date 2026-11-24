@@ -1,13 +1,13 @@
 {
   "name": "saymock",
   "displayName": "Saymock",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Design with Claude in saymock, the collaborative design board: connects the saymock MCP server and adds skills to design screens from a codebase, implement a saymock design in code, and review a screen.",
   "author": {
     "name": "saymock",
     "url": "https://saymock.com"
   },
-  "homepage": "https://saymock.com",
+  "homepage": "https://saymock.com/en/?utm_source=claude-plugin&utm_medium=plugin-directory",
   "repository": "https://github.com/saymock/claude-plugin",
   "documentationUrl": "https://github.com/saymock/claude-plugin#readme",
   "privacyPolicyUrl": "https://saymock.com/en/privacy/",
